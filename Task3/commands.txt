@@ -1,0 +1,41 @@
+openssl aes-128-ecb -e -salt -pass pass:aaa111 -in plaintext.txt -out zout_ecb.txt
+//Double check: openssl aes-128-ecb -d -salt -pass pass:aaa111  -in zout_ecb.txt 
+
+openssl aes-128-cbc -e -salt -pass pass:aaa111 -in plaintext.txt -out zout_cbc.txt 
+//Double check: openssl aes-128-cbc -d -salt -pass pass:aaa111  -in zout_cbc.txt 
+
+Modification 
+zout_ecb.txt 03->22 
+zout_cbc.txt cbc 65->33
+
+openssl aes-128-ecb -d -salt -pass pass:aaa111  -in zzout_ecb.txt 
+openssl aes-128-cbc -d -salt -pass pass:aaa111  -in zzout_cbc.txt 
+
+Questions Section 
+
+Prediction: 
+AES algorithm divides the message into 128 bits (16 bytes) block size. This means the corrupted byte 30 is located within the ciphertext block from byte 16 to byte 31. For ECB, we predict the plaintext message from byte 1 to byte 16 and byte 31 to byte 91 can be recovered. For CBC, we predict the plaintext message from byte 1-16 and byte 46 to byte 91 can be recovered.
+
+Under ECB decryption, identical ciphertext block leads to identical plaintext block.  Since the ciphtertext block from byte 16 to 31 is affected, this means only the corresponding plaintext block is corrupted. Hence, we predict  the plaintext blocks from byte 1 to byte 16 and byte 31 to byte 91 can be recovered. 
+
+Under CBC decryption, each cipher block is chained with next plaintext block.
+Since the ciphtertext block from byte 16 to 31 is affected, this means corresponding  plaintext block (byte 16-31) and the next plaintext block (byte 31-64) is corrupted. Hence, we predict the plaintext message blocks from byte 1-16 and byte 46 to byte 91 can be recovered.
+
+
+Actual Results:
+Our prediction is somewhat correct, but we forgot to take in account of the extra header information in the encrypted files. The original plaintext message is 91 bytes long, while the resulting encrypted message is 112 bytes long. 
+  
+For ECB, the plaintext block from byte 1 to 15 is affected. This confirms our expectation that corrupted ciphertext block will only affect the corresponding plaintext block. 
+ 
+For CBC, the plaintext block from byte 1 to 15 and the next plaintext block from byte 16 to byte 31 are affected. This confirms out expectation that the corrupted ciphertext block will affect the correspondig plaintext block and one more plaintext block after it due to the chaining effect. 
+
+Implication: 
+From our ECB mode test results, we observe each block is processed independently, so one corrupted ciphertext block will only alter its correspoding plaintext block during decryption and vice versa for encyprion. This implies that ECB mode encryption will leak too much information for adversary. 
+
+From our CBC mode test results, we observe that ciphertext block is chained to the next plaintext block. This implies that identical plaintext blocks can lead to different ciphertext blocks, and will leak less information than the ECB mode encryption. 
+
+
+Notes:
+https://www.shellhacks.com/encrypt-decrypt-file-password-openssl/
+https://wiki.openssl.org/index.php/Enc
+https://stackoverflow.com/questions/3283787/size-of-data-after-aes-cbc-and-aes-ecb-encryption
