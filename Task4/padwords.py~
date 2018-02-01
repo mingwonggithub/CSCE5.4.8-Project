@@ -18,7 +18,7 @@ def pad(word, length=16):
     if len(word) > length:
         return word[0:length]
     elif len(word) < length:
-        return word + ' '*(length-len(word))
+        return ' '*(length-len(word)) + word
     else:
         return word
     
