@@ -18,7 +18,7 @@ def pad(word, length=16):
     if len(word) > length:
         return word[0:length]
     elif len(word) < length:
-        return ' '*(length-len(word)) + word
+        return word + ' '*(length-len(word))
     else:
         return word
     
@@ -27,5 +27,5 @@ words = [pad(word) for word in words]
 # Write new list
 with open('pwords.txt', 'w') as f:
     for word in words:
-        f.write(word + '\n')
+        f.write(word)
         

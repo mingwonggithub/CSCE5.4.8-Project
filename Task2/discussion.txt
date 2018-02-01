@@ -1,0 +1,10 @@
+
+After examining the encrypted images visually, we see that when the electronic codebook mode
+is used, we can clearly discern the patterns of the original image. This is because in this
+mode, the message is divided into blocks, each of which is processed independently. For this
+reason, identical plaintext blocks lead to identical ciphertext blocks, leading to information
+leakage.
+
+When cipher block chaining is used, each previous cipher block is chained with the current
+plaintet block, meaning that identical plaintext blocks will NOT lead to identical ciphertext
+blocks, and that patterns in the plaintext will not be preserved in the ciphertext.
