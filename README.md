@@ -12,8 +12,11 @@ This is the project repo for the first CSCE 548 project.
 
 # How to run Task 2
 
-TODO
-
+ 1. In the `/Task2` directory, run `make`.
+    * This will run encrypt.sh, which will encrypt pic\_original, producing pic\_encoded\_XXX.bin where XXX will be cbc or ecb.
+    * decrypt.sh will also run, decrypting both encrypted images above, producing pic\_decoded\_XXX.bmp
+ 2. pic\_encoded\_XXX.bmp is the encoded image with correct BMP headers, viewable in an image editor
+ 3. discussion.txt contains answer to question.
 
 # How to run Task 3
 
