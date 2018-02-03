@@ -1,7 +1,0 @@
-
-
-all:
-	gcc -o enc Task4.c -lcrypto -ldl
-
-clean:
-	rm *~
