@@ -6,8 +6,8 @@ This is the project repo for the first CSCE 548 project.
 # How to run Task 1
 
  1. In the `/Task1` directory, run `make`.
- 1. Enter password `abcdef` for each of the 3 encryption/decryption setups.
- 1. Look at the `output-<cipher>.txt` files to confirm decryption worked.
+ 2. Enter password `abcdef` for each of the 3 encryption/decryption setups.
+ 3. Look at the `output-<cipher>.txt` files to confirm decryption worked.
 
 
 # How to run Task 2
@@ -20,7 +20,12 @@ This is the project repo for the first CSCE 548 project.
 
 # How to run Task 3
 
-TODO
+ 1. In the `/Task3`, run `./encrypt.sh` to generate zout_ecb.txt and zout_cbc.txt 
+ 2. Modify the 30th byte using ghex zout_ecb.txt and zout_cbc.txt. 
+    * ie. Change AC -> 22 in the sample zout_ecb.txt 
+    * Change 0F -> 33  in the sample zout_cbc.txt 
+ 3. The new files must be named as zzout_ecb.txt and zzout_cbc.txt.
+ 4. Run `./decrypt.sh` to generate plaintext_ecb.txt and plaintext_cbc.txt
 
 
 # How to run Task 4
