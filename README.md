@@ -20,7 +20,7 @@ This is the project repo for the first CSCE 548 project.
 
 # How to run Task 3
 
- 1. In the `/Task3`, run `./encrypt.sh` to generate zout_ecb.txt and zout_cbc.txt 
+ 1. In the `/Task3` directory, run `./encrypt.sh` to generate zout_ecb.txt and zout_cbc.txt 
  2. Modify the 30th byte using ghex zout_ecb.txt and zout_cbc.txt. 
     * ie. Change AC -> 22 in the sample zout_ecb.txt 
     * Change 0F -> 33  in the sample zout_cbc.txt 
@@ -30,5 +30,10 @@ This is the project repo for the first CSCE 548 project.
 
 # How to run Task 4
 
-TODO
+ 1. In the `/Task4` directory, run `make`.
+ 2. Run the executable file `enc` to run the dictionary attack. The found key will be printed to stdout.
+ **NOTE** 
+ * Make sure that the file pwords.txt exists. If not, run padwords.py.
+ * Openssl must be installed to compile `enc`. Use `sudo apt-get install libssl-dev` if not.
+
 

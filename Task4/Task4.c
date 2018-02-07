@@ -69,7 +69,7 @@ void main(char** argv, int argc)
 		outlen += tmplen;
 
 		// Print ciphertexts for debugging
-		fprintf(stdout, "%s -> \n", word);
+/*		fprintf(stdout, "%s -> \n", word);
 
 		int j;
 		for (j = 0; j < outlen; ++j)
@@ -81,6 +81,7 @@ void main(char** argv, int argc)
 			fprintf(stdout, "%2x", ctext[j]);
 
 		fprintf(stdout, "\n");
+*/
 
 
 		// Compare to pre-known ciphertext
