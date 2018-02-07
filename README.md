@@ -32,7 +32,8 @@ This is the project repo for the first CSCE 548 project.
 
  1. In the `/Task4` directory, run `make`.
  2. Run the executable file `enc` to run the dictionary attack. The found key will be printed to stdout.
- **NOTE** 
+ 
+**NOTE** 
  * Make sure that the file pwords.txt exists. If not, run padwords.py.
  * Openssl must be installed to compile `enc`. Use `sudo apt-get install libssl-dev` if not.
 
