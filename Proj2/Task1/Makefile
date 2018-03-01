@@ -6,8 +6,9 @@ run:
 	gcc -g -o stack -z execstack -fno-stack-protector stack.c
 	chmod 4755 stack
 
-	# Compile exploit
+	# Compile and run exploit
 	gcc -o exploit -g exploit.c
+	./exploit
 
 clean:
 
