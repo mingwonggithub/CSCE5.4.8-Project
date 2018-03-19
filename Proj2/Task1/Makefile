@@ -1,5 +1,7 @@
 # Do run_root first, then run_seed
 
+all: run_root run_seed
+
 run_seed:
 	# Compile and run exploit
 	gcc -o exploit -g exploit.c
