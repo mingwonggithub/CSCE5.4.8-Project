@@ -25,4 +25,4 @@ clean:
 	rm -f stack
 	rm -f exploit
 	rm -f badfile
-	rm *~
+	rm -f *~
