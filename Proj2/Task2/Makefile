@@ -11,8 +11,8 @@ run_seed:
 	# ./stack 
 
 run_root:
-	# disable address randomization
-	sysctl -w kernel.randomize_va_space=0
+	# Enable address randomization
+	sysctl -w kernel.randomize_va_space=2
 
 	# Compile vulnerable program in root account
 	gcc -g -o stack -z execstack -fno-stack-protector stack.c
@@ -20,6 +20,10 @@ run_root:
 
 	# Optional command to illustrate launching shellcode
 	# gcc -z execstack -o call_shellcode -g call_shellcode.c
+
+loop:
+	# Run stack in a loop
+	sh -c "while [ 1 ]; do ./stack; done;"
 
 clean:
 	rm -f stack
