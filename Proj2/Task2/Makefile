@@ -23,8 +23,8 @@ run_root:
 
 loop:
 	# Run stack in a loop
-	sh -c "while [ 1 ]; do ./stack; done;"
-
+	#sh -c "while [ 1 ]; do ./stack; done;"
+	while true; do ./stack && break; done
 clean:
 	rm -f stack
 	rm -f exploit
