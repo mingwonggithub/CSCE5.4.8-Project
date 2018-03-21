@@ -1,5 +1,7 @@
 # Do run_root first, then run_seed
 
+all: run_root run_seed
+
 run_seed:
 	# Compile and run exploit
 	gcc -o exploit -g exploit.c
@@ -12,7 +14,7 @@ run_seed:
 
 run_root:
 	# disable address randomization
-	sysctl -w kernel.randomize_va_space=0
+	sudo sysctl -w kernel.randomize_va_space=0
 
 	# Compile vulnerable program in root account
 	gcc -g -o stack -z execstack -fno-stack-protector stack.c
