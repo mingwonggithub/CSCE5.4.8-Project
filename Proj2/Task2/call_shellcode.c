@@ -1,6 +1,6 @@
 /* call_shellcode.c  */
 
-/*A program that creates a file containing code for launching shell*/
+/* A program that creates a file containing code for launching a shell. */
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -18,9 +18,8 @@ const char code[] =
   "\xcd\x80"             /* int     $0x80                  */
 ;
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
    char buf[sizeof(code)];
    strcpy(buf, code);
    ((void(*)( ))buf)( );
-} 
+}
