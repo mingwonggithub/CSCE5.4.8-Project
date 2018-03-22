@@ -1,0 +1,18 @@
+# Git ignore file for CSCE 548, Project 2.
+
+# Ignore OpenOffice lock files.
+.~*#
+
+# Ignore build artifacts.
+*.o
+
+# Ignore swap files.
+*.swp
+
+# Ignore executables in each folder.
+# We have to do this by names, since they don't have a file extension.
+Task1/exploit
+Task1/stack
+
+Task2/exploit
+Task2/stack
