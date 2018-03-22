@@ -1,6 +1,8 @@
 # Do run_root first, then run_seed
 
-run_seed:
+all: exploit stack
+
+exploit:
 	# Compile and run exploit
 	gcc -o exploit -g exploit.c
 	./exploit
@@ -10,9 +12,9 @@ run_seed:
 	# everytime user has made changes to exploit.c  
 	# ./stack 
 
-run_root:
+stack: exploit
 	# Enable address randomization
-	sysctl -w kernel.randomize_va_space=2
+	sudo sysctl -w kernel.randomize_va_space=2
 
 	# Compile vulnerable program in root account
 	gcc -g -o stack -z execstack -fno-stack-protector stack.c
@@ -21,10 +23,13 @@ run_root:
 	# Optional command to illustrate launching shellcode
 	# gcc -z execstack -o call_shellcode -g call_shellcode.c
 
+find_offset: stack
+	gdb --batch --command find_offset.gdb stack
+
 loop:
 	# Run stack in a loop
-	#sh -c "while [ 1 ]; do ./stack; done;"
-	while true; do ./stack && break; done
+	sh -c "while [ 1 ]; do ./stack; done;"
+
 clean:
 	rm -f stack
 	rm -f exploit
