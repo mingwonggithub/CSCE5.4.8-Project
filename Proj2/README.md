@@ -3,7 +3,7 @@
 This is the code for project2. 
 
 # How to run Task 1 (new version)
- 1. In the `/Task1` directory, run `make clean` to remove old files
+ 1. In the `/Task1b` directory, run `make clean` to remove old files
  2. Run `make` to disable address randomization, create the bad file, and compile the stack program
  3. Run `./stack`
  4. Type `id` to verify root shell
@@ -18,8 +18,11 @@ This is the code for project2.
  7. Run `./stack`
  8. Type `id` to verify root shell
 
-# How to run Task 2
-
+# How to run Task 2 (new version)
+ 1. In the `/Task2b` directory, run `make clean` to remove old files
+ 2. Run `make` to enable address randomization, create the bad file, and compile the stack program. Note that creating the bad file involves sampling the random addresses 250 times to roughly determine the mean so this step will take several seconds.
+ 3. Run `make loop`. After a while you should get a root shell.
+ 4. Type `id` to verify root shell
 
 # How to run Task 3
 
