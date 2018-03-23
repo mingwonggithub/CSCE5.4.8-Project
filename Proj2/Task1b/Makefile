@@ -6,7 +6,7 @@ exploit: offset.txt
 	# Compile and run exploit. (Will generate malicious badfile.)
 	# Uses offset info we generated earlier to help with positioning.
 	gcc -o exploit -g exploit.c
-	./exploit < offset.txt 
+	sh -c "./exploit '$$(head offset.txt -n 1)' '$$(tail offset.txt -n 1)'" 
 
 stack: badfile
 	# Disable address randomization
