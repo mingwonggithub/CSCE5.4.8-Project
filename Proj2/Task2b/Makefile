@@ -31,7 +31,7 @@ offset.txt: stack
 	python convert_offsets.py
 
 loop:
-	# Run stack in a loopi
+	# Run stack in a loop
 	sh -c "while [ 1 ]; do ./stack; done;"
 
 clean:
