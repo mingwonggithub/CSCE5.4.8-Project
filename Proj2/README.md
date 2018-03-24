@@ -30,7 +30,10 @@ This is the code for project2.
  3. Run `./stack`
 
 # How to run Task 4
-
+ 1. In the `/Task4` directory, run `make clean` to remove old files
+ 2. Run `make` to disable address randomization, create the bad file, and compile the stack program with noexecstack option
+ 3. Run `./stack`
+ 4. Cry because it doesn't work.
 
 # Contributions
 All members participate in the project and verify each other works.  
