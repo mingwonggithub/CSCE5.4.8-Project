@@ -24,8 +24,8 @@ This is the code for project2.
  3. Run `make loop`. After a while you should get a root shell.
  4. Type `id` to verify root shell
 
-# How to run Task 3 (new version)
- 1. In the `/Task3b` directory, run `make clean` to remove old files
+# How to run Task 3 
+ 1. In the `/Task3` or `/Task3b` directory, run `make clean` to remove old files
  2. Run `make` to disable address randomization, create the bad file, and compile the stack program with Stack Guard protection
  3. Run `./stack`
 
