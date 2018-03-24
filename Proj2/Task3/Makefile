@@ -5,7 +5,7 @@ all: run_root run_seed
 run_seed:
 	# Compile and run exploit
 	gcc -o exploit -g exploit.c
-	./exploit
+	sh -c "exploit"
 
 	# Note run ./stack separately, not here
 	# Will run the previous version unless user run_root 
@@ -17,8 +17,8 @@ run_root:
 	sudo sysctl -w kernel.randomize_va_space=0
 
 	# Compile vulnerable program in root account without -fno-stack-protector
-	gcc -g -o stack -z execstack stack.c
-	chmod 4755 stack
+	sudo gcc -g -o stack -z  execstack stack.c
+	sudo chmod 4755 stack
 
 	# Optional command to illustrate launching shellcode
 	# gcc -z execstack -o call_shellcode -g call_shellcode.c
