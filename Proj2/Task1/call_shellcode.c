@@ -1,6 +1,6 @@
 /* call_shellcode.c  */
 
-/*A program that creates a file containing code for launching a shell. */
+/* A program that creates a file containing code for launching a shell. */
 #include <stdlib.h>
 #include <stdio.h>
 

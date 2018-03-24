@@ -1,4 +1,4 @@
-set logging overwrite on
+set logging overwrite off
 set logging file offset.txt
 break bof
 run

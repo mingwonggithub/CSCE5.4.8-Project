@@ -10,7 +10,7 @@ int bof(char *str) {
     char buffer[24];
 
     // Print out the buffer address
-    //printf("0x%06x, %ld\n", (int) buffer, ((long) buffer) & 0x00000000FFFFFFFF);
+    //printf("%p\n", buffer);
     //fflush(stdout);
 
     /* The following statement has a buffer overflow problem */
