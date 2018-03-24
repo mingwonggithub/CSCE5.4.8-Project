@@ -18,6 +18,7 @@ This is the code for project2.
  1. In the `/Task3` directory, run `make clean` to remove old files
  2. Run `make` to disable address randomization, create the bad file, and compile the stack program with Stack Guard protection
  3. Run `./stack`
+ 4. Give up
 
 # How to run Task 4
  1. In the `/Task4` directory, run `make clean` to remove old files
@@ -27,7 +28,7 @@ This is the code for project2.
 
 # Contributions
 All members participate in the project and verify each other works.  
-Nathaniel works on Task 1 and contributes on Task 2.  
-Theodore works on Task 2.  
+Nathaniel works on Task 1 & 4 and contributes on Task 2.  
+Theodore works on Task 2 anc contributes on Task 4.  
 Ming works on Task 3 and contributes on Task 1.  
 Philip standardizes and automates the exploit code.  
