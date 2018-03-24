@@ -1,4 +1,4 @@
-# Makefile for CSCE 548, Project 2, Task 1.
+# Makefile for CSCE 548, Project 2, Task 4.
 
 all: exploit
 
