@@ -1,4 +1,4 @@
-# Makefile for CSCE 548, Project 2, Task 2.
+# Makefile for CSCE 548, Project 2, Task 1.
 
 all: exploit
 
@@ -27,10 +27,6 @@ find_offset: stack
 offset.txt: stack
 	# Print EBP and BUFFPTR to offset.txt.
 	gdb --batch --command print_offset.gdb stack
-
-loop:
-	# Run stack in a loopi
-	sh -c "while [ 1 ]; do ./stack; done;"
 
 clean:
 	rm -f stack
