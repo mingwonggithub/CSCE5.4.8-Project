@@ -29,6 +29,6 @@ This is the code for project2.
 # Contributions
 All members participate in the project and verify each other works.  
 Nathaniel works on Task 1 & 4 and contributes on Task 2.  
-Theodore works on Task 2 anc contributes on Task 4.  
+Theodore works on Task 2 and contributes on Task 4.  
 Ming works on Task 3 and contributes on Task 1.  
 Philip standardizes and automates the exploit code.  
