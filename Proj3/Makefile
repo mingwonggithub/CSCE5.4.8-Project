@@ -12,6 +12,8 @@ ALIAS=my-alias.alias
 # Keystore name
 KEYSTORE=my-key.keystore
 
+all: task1 task2 task3 task4
+
 task1:
 	# Download the apk
 	wget http://www.cis.syr.edu/~wedu/seed/Labs_Android5.1/Android_Repackaging/RepackagingLab.apk
