@@ -51,6 +51,8 @@ task4:
 		-keystore ${KEYSTORE} ${APPNEW}.apk ${ALIAS}
 
 clean:
-	rm -rf *.apk
+	rm -rf ${APP}
+	rm -f *.apk
+	rm -f *.smali
 	rm -f *.sig
 	rm -f *.keystore
