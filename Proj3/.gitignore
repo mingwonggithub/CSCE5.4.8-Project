@@ -1,3 +1,4 @@
 app/
 my-key.keystore
 *.apk
+MaliciousCode.smali
