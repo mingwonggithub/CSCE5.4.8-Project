@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/top_background" android:background="#ff4285f4" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_heightPercent="21.099997%" />
-    <net.appcloudbox.ads.common.UI.TypefacedTextView android:textSize="42.0sp" android:typeface="sans" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/custom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:text="" android:maxLines="1" android:layout_centerHorizontal="true" app:layout_marginTopPercent="10.000002%" />
-    <android.support.v7.widget.AppCompatImageView android:id="@id/close_btn" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/acb_native_interstitial_closebutton" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:layout_marginTopPercent="2.2500038%" app:layout_marginRightPercent="3.9999962%" />
-</android.support.percent.PercentRelativeLayout>
