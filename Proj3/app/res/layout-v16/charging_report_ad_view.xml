@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/charging_report_ad_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="188.0dip">
+        <net.appcloudbox.ads.base.ContainerView.AcbNativeAdPrimaryView android:id="@id/ad_cover_img" android:layout_width="fill_parent" android:layout_height="188.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <net.appcloudbox.ads.base.ContainerView.AcbNativeAdIconView android:layout_gravity="center_vertical" android:id="@id/ad_icon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="13.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff313131" android:ellipsize="end" android:id="@id/ad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/ad_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/ad_conner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/ad_call_to_action" android:background="@drawable/charging_report_green_button_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:maxLength="20" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</LinearLayout>

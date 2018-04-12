@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/full_screen_dialog_album" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/acb_phone_screen_flash_guide_more_phone" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/promote_page_close" android:src="@drawable/promote_dialog_close" android:layout_alignParentRight="true" android:alpha="0.5" style="@style/promote_close_btn" />
+    <ImageView android:id="@id/content_layout_bg" android:layout_width="fill_parent" android:layout_height="254.0dip" android:src="@drawable/acb_phone_content_layout_bg" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/lock_screen_guide_subtitle" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="17.0sp" android:textColor="#99ffffff" android:gravity="center_horizontal" android:id="@id/dialog_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/settings_activity_lock_screen_settings_title" android:fontFamily="sans-serif-light" />
+        <com.surpax.view.RevealFlashButton android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/promote_page_ok" android:background="@drawable/acb_blue_button_round_side" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="32.0dip" android:text="@string/ok_btn_text" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</RelativeLayout>

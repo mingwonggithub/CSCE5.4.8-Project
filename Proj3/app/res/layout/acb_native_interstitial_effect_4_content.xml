@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.percent.PercentRelativeLayout android:id="@id/rootview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/top_background" android:background="#ff4285f4" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_heightPercent="42.499996%" />
+        <android.support.percent.PercentRelativeLayout android:background="@drawable/style4_image_bound_bg" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" app:cardElevation="4.0dip" app:layout_widthPercent="90.5%" app:layout_marginTopPercent="3.7500024%" app:layout_aspectRatio="187.99744%">
+            <net.appcloudbox.ads.base.ContainerView.AcbNativeAdPrimaryView android:id="@id/primary_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" app:layout_widthPercent="91.99999%" app:layout_aspectRatio="200.0%" />
+            <ImageView android:background="@drawable/adcorner" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_alignLeft="@id/primary_view" android:layout_alignTop="@id/primary_view" />
+        </android.support.percent.PercentRelativeLayout>
+        <android.support.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip" app:layout_marginTopPercent="42.499996%">
+            <ImageView android:id="@id/bg_icon" android:background="#ff4285f4" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_heightPercent="50.0%" />
+            <android.support.v7.widget.CardView android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" app:cardCornerRadius="30.0dip" app:cardElevation="4.0dip">
+                <net.appcloudbox.ads.base.ContainerView.AcbNativeAdIconView android:id="@id/icon" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </android.support.v7.widget.CardView>
+            <FrameLayout android:id="@id/choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_below="@id/bg_icon" android:layout_alignParentRight="true" />
+        </android.support.percent.PercentRelativeLayout>
+        <TextView android:textSize="20.0sp" android:typeface="sans" android:textColor="#dd000000" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="49.0dip" android:layout_marginRight="49.0dip" android:text="" android:maxLines="1" android:layout_centerHorizontal="true" app:layout_marginTopPercent="62.5%" />
+        <TextView android:textSize="14.0sp" android:typeface="sans" android:textColor="#99000000" android:ellipsize="end" android:gravity="center" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:text="" android:maxLines="2" android:lines="2" android:layout_centerHorizontal="true" app:layout_marginTopPercent="70.00001%" />
+        <net.appcloudbox.ads.interstitialad.NativeInterstitial.UI.FlashButton android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/action" android:background="@drawable/acb_interstitialads_shape_action_button_bg" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="" app:layout_marginTopPercent="82.50001%" />
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

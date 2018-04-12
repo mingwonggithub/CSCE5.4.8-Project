@@ -1,0 +1,102 @@
+{
+  "widget": "android.support.constraint.ConstraintLayout",
+  "properties": [
+    {"name":"layout_height", "type":"dimen", "value":"50dp"},
+    {"name":"background", "type":"color", "value":"#FFFFFFFE"},
+    {"name":"layout_width", "type":"dimen", "value":"match_parent"}
+  ],
+  "views": [
+    {
+      "widget": "net.appcloudbox.ads.base.ContainerView.AcbNativeAdIconView",
+      "properties": [
+        {"name":"id", "type":"ref", "value":"icon"},
+        {"name":"layout_width", "type":"dimen", "value":"50dp"},
+        {"name":"layout_height", "type":"dimen", "value":"50dp"},
+        {"name":"layout_constraintLeft_toLeftOf", "type":"string", "value":"parent"},
+        {"name":"layout_constraintTop_toTopOf", "type":"string", "value":"parent"},
+        {"name":"layout_constraintBottom_toBottomOf", "type":"string", "value":"parent"}
+      ]
+    },
+    {
+      "widget": "TextView",
+      "properties": [
+        {"name":"text", "type" : "string", "value" : "title"},
+        {"name":"id", "type":"ref", "value":"title"},
+        {"name":"textColor", "type":"color", "value":"#FF000000"},
+        {"name":"textSize", "type":"dimen", "value":"16sp"},
+        {"name":"ellipsize", "type":"string", "value":"END"},
+        {"name":"layout_constraintTop_toTopOf", "type":"string", "value":"parent"},
+        {"name":"layout_constraintLeft_toRightOf", "type":"ref", "value":"icon"},
+        {"name":"layout_constraintRight_toLeftOf", "type":"ref", "value":"action_framelayout"},
+        {"name":"padding_left", "type":"dimen", "value":"10dp"},
+        {"name":"padding_right", "type":"dimen", "value":"10dp"},
+        {"name":"layout_marginTop", "type":"dimen", "value":"8dp"},
+        {"name":"layout_height", "type":"dimen", "value":"wrap_content"},
+        {"name":"layout_width", "type":"dimen", "value":"0dp"},
+        {"name":"maxLines", "type":"integer", "value":"1"},
+        {"name":"fontFamily", "type":"string", "value":"sans-serif-medium"}
+      ]
+    },
+    {
+      "widget": "TextView",
+      "properties": [
+        {"name":"id", "type":"ref", "value":"body"},
+        {"name":"text", "type" : "string", "value" : "body"},
+        {"name":"textSize", "type":"dimen", "value":"12sp"},
+        {"name":"textColor", "type":"color", "value":"#FF575757"},
+        {"name":"ellipsize", "type":"string", "value":"END"},
+        {"name":"maxLines", "type":"integer", "value":"1"},
+        {"name":"layout_width", "type":"dimen", "value":"0dp"},
+        {"name":"layout_height", "type":"dimen", "value":"wrap_content"},
+        {"name":"layout_constraintTop_toBottomOf", "type":"ref", "value":"title"},
+        {"name":"layout_constraintLeft_toLeftOf", "type":"ref", "value":"title"},
+        {"name":"layout_constraintRight_toLeftOf", "type":"ref", "value":"action_framelayout"},
+        {"name":"padding_left", "type":"dimen", "value":"10dp"},
+        {"name":"padding_right", "type":"dimen", "value":"10dp"},
+        {"name":"layout_marginTop", "type":"dimen", "value":"-3dp"}
+      ]
+    },
+    {
+      "widget": "FrameLayout",
+      "properties": [
+        {"name":"id", "type":"ref", "value":"action_framelayout"},
+        {"name":"layout_height", "type":"dimen", "value":"0dp"},
+        {"name":"layout_width", "type":"dimen", "value":"wrap_content"},
+        {"name":"layout_constraintRight_toRightOf", "type":"string", "value":"parent"},
+        {"name":"layout_constraintTop_toTopOf", "type":"string", "value":"parent"},
+        {"name":"layout_constraintBottom_toBottomOf", "type":"string", "value":"parent"}
+      ],
+      "views": [
+        {
+          "widget": "Button",
+          "properties": [
+            {"name":"id", "type":"ref", "value":"action"},
+            {"name":"background", "type":"color", "value":"#FF2b91fc"},
+            {"name":"text", "type" : "string", "value" : "button"},
+            {"name":"textColor", "type":"color", "value":"#FFFFFFFF"},
+            {"name":"textSize", "type":"dimen", "value":"17sp"},
+            {"name":"layout_width", "type":"dimen", "value":"108dp"},
+            {"name":"layout_height", "type":"dimen", "value":"match_parent"},
+            {"name":"padding_left", "type":"dimen", "value":"4dp"},
+            {"name":"padding_right", "type":"dimen", "value":"4dp"},
+            {"name":"padding_top", "type":"dimen", "value":"0dp"},
+            {"name":"padding_bottom", "type":"dimen", "value":"0dp"},
+            {"name":"maxLines", "type":"integer", "value":"1"},
+            {"name":"fontFamily", "type":"string", "value":"sans-serif-medium"},
+            {"name":"ellipsize", "type":"string", "value":"END"}
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "FrameLayout",
+      "properties": [
+        {"name":"id", "type":"ref", "value":"choice"},
+        {"name":"layout_constraintBottom_toBottomOf", "type":"string", "value":"parent"},
+        {"name":"layout_constraintLeft_toLeftOf", "type":"string", "value":"parent"},
+        {"name":"layout_width", "type":"dimen", "value":"wrap_content"},
+        {"name":"layout_height", "type":"dimen", "value":"wrap_content"}
+      ]
+    }
+  ]
+}

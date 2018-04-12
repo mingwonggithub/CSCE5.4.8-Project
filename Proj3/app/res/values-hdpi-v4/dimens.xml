@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="charging_screen_ad_height">140.0dip</dimen>
+    <dimen name="charging_screen_advertisement_margin_top">0.0dip</dimen>
+    <dimen name="charging_screen_charging_state_margin_top">13.0dip</dimen>
+    <dimen name="charging_screen_full_charge_left_margin_top">0.0dip</dimen>
+    <dimen name="charging_screen_power_percentage_font_size">100.0sp</dimen>
+    <dimen name="charging_screen_power_percentage_margin_top">26.0dip</dimen>
+    <dimen name="charging_screen_slid_to_unlock_margin_bottom">15.0dip</dimen>
+    <dimen name="charging_screen_title_margin_top">12.0dip</dimen>
+    <dimen name="ad_button_top_margin">6.0dip</dimen>
+    <dimen name="ad_image_top_margin">5.0dip</dimen>
+    <dimen name="ad_title_text_size">18.0sp</dimen>
+    <dimen name="ad_title_top_margin">15.0dip</dimen>
+    <dimen name="info_max_wide">100.0dip</dimen>
+    <dimen name="ad_button_bottom_margin">12.0dip</dimen>
+</resources>

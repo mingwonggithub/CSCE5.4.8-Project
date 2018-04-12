@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff303034" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="187.0">
+        <ImageView android:id="@id/rope" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="55.0dip" android:src="@drawable/style_1_rope" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        <TextView android:gravity="center" android:id="@id/close_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="18.0dip" android:layout_marginBottom="2.0dip" android:drawableLeft="@drawable/style_1_close" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="512.0dip">
+        <View android:id="@id/background" android:background="@drawable/style_1_bg" android:layout_width="fill_parent" android:layout_height="512.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="55.0dip" android:src="@drawable/style_1_rope" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="480.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="53.0" />
+</LinearLayout>

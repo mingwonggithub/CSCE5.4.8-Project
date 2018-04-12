@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="acb_charging_report_charging_status">充電狀態</string>
+    <string name="acb_charging_report_close_dialog_content">如果你關閉智慧充電，你將無法保護你的電池，是否確認關閉？</string>
+    <string name="acb_charging_report_close_dialog_negative_action">關閉</string>
+    <string name="acb_charging_report_close_dialog_positive_action">取消</string>
+    <string name="acb_charging_report_close_dialog_title">你要關閉智慧充電嗎？</string>
+    <string name="acb_charging_report_disable_charging">關閉</string>
+    <string name="acb_charging_report_fully_charge_left">剩餘充電時間%1$s。</string>
+    <string name="acb_charging_report_fully_charged">充電已完成。</string>
+    <string name="acb_charging_report_guide_title">正在充電，點擊可查看電池狀態。</string>
+    <string name="acb_charging_report_mode_speed">快速充電</string>
+    <string name="acb_charging_report_notification_push_button">查看</string>
+    <string name="acb_charging_report_notification_push_subtitle">點擊查看詳情。</string>
+    <string name="acb_charging_report_notification_push_title">充電報告已生成。</string>
+    <string name="acb_charging_report_notification_resident_bar_title">正在充電（%1$s）</string>
+    <string name="acb_charging_report_overcharge">過渡充電可能會損壞電池。</string>
+    <string name="acb_charging_report_remain_charging">充電仍需</string>
+    <string name="acb_charging_report_setting_tilte">充電報告</string>
+    <string name="acb_charging_report_status_good">良好</string>
+    <string name="acb_charging_report_toast_continuous">手機持續充電中，以確保電池蓄電量達到最大。</string>
+    <string name="acb_charging_report_toast_speed">手機快速充電中，直到電量達到80%。</string>
+    <string name="acb_charging_report_toast_trickle">電量達100%後需繼續充電15min，確保電池完全充滿。</string>
+    <string name="acb_charging_report_turn_off_alert">充電報告已關閉</string>
+    <string name="acb_charging_report_unplug_battery">電量</string>
+    <string name="acb_charging_report_unplug_battery_charged">已充電量:</string>
+    <string name="acb_charging_report_unplug_charging_time">充電時間:</string>
+    <string name="continuousacb_charging_report_mode_continuous">持續充電</string>
+    <string name="trickleacb_charging_report_mode_trickle">涓流充電</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/full_screen_dialog_album" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/acb_phone_screen_flash_guide_more_phone" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/dialog_title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/acb_theme_guide_title" android:layout_weight="9.0" android:fontFamily="sans-serif-medium" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/activate_alert_cancel_button" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/acb_phone_idle_alert_close" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/content_layout_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="254.0dip" android:src="@drawable/acb_phone_content_layout_bg" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="224.0dip" android:layout_alignParentBottom="true">
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/acb_theme_guide_subtitle" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="13.0sp" android:textColor="#b2ffffff" android:gravity="center" android:id="@id/dialog_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:text="@string/acb_theme_guide_content" android:layout_below="@id/dialog_title" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" />
+        </RelativeLayout>
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+            <com.surpax.view.RevealFlashButton android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/activate_alert_enable_button" android:background="@drawable/acb_phone_blue_button_round_side" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/lock_screen_guide_ok" android:fontFamily="sans-serif" />
+        </FrameLayout>
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>
