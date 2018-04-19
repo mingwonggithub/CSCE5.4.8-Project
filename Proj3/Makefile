@@ -50,6 +50,13 @@ task4:
 	jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 \
 		-keystore ${KEYSTORE} ${APPNEW}.apk ${ALIAS}
 
+task5: 
+	# Connect to the Android VM through IP address
+	adb connect 10.0.2.5
+
+	# Install the app
+	adb install ${APPNEW}.apk
+
 clean:
 	rm -rf ${APP}
 	rm -f *.apk
