@@ -12,7 +12,7 @@ ALIAS=my-alias.alias
 # Keystore name
 KEYSTORE=my-key.keystore
 
-all: task1 task2 task3 task4
+all: task1 task2 task3 task4 task5
 
 task1:
 	# Download the apk
