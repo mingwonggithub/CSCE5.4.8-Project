@@ -4,7 +4,7 @@ This is the code for project 3.
 
 # Pre-steps before running the tasks 
  1. Make sure the Android VM is powered on  
- 2. Type `netfcfg` in the Android terminal app to determine the ip address of Android VM
+ 2. Type `netcfg` in the Android terminal app to determine the ip address of Android VM
  3. Insert the ip address of the Android VM into task 5 of the Makefile.  
  4. Remove the Repackaging Lab app from the device if it exists
  5. Insert a few phone contacts
