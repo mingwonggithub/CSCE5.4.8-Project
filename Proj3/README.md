@@ -16,7 +16,10 @@ This is the code for project 3.
 
 # How to run each task individually
  1. In the `/Proj3` directory, run `make clean` to remove old files
- 2. Tye `make task[*task number*]`, in which task number is the task you want to execute
+ 2. Tye `make task[ *task number* ]`, in which task number is the task you want to execute
 
 
-
+# Contributions
+All members participate in the project and verify each other works.  
+Nathaniel, Theodore, and Philip work on Task 1 thru 4.  
+Ming works on Task 5 and answers the lab questions.  
